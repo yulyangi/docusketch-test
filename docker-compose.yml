@@ -1,0 +1,29 @@
+version: '3.9'
+
+services:
+  db:
+    image: mongo:latest
+    ports:
+      - 27017:27017
+    networks:
+      - backend
+    environment: 
+      - MONGODB_ENDPOINT=mongodb://db:27017/example
+      # - MONGO_INITDB_ROOT_USERNAME=admin
+      # - MONGO_INITDB_ROOT_PASSWORD=admin
+
+  api:
+    build: ./
+    ports:
+      - 8080:5000
+    volumes:
+      - ./src:/src
+    networks:
+      - backend
+    environment: 
+      - MONGODB_ENDPOINT=mongodb://db:27017/example
+    depends_on:
+      - db
+
+networks:
+  backend:
