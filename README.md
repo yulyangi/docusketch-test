@@ -1,6 +1,14 @@
 # test api
-## to run docker-compose
+## to run app
 docker-compose up -d 
+
+## to stop app
+docker-compose down
+
+## endpoinsts
+  * localhost:8080/
+  * localhost:8080/items
+  * localhost:8080/items/<id>
 
 ## to create an item run
 curl -X POST -H "Content-Type: application/json" -d '{"title": "mytitle"}' http://localhost:8080/items

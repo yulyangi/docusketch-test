@@ -15,7 +15,7 @@ def parse_json(data):
 
 @app.route('/')
 def hello_world():
-    return 'Here is test task.'
+    return 'Here is a test task.'
 
 @app.route('/items', methods=['GET'])
 def get_all_items():
