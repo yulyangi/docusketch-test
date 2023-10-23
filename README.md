@@ -13,6 +13,6 @@ curl -X PUT -H "Content-Type: application/json" -d '{"title": "FUCK"}' http://lo
 
 
 ## cpu and memory usage
-# make sure this script is executable
-# chmod +x /path/to/the/script
-# to execute the script run "./path/to/the/script"
+  make sure this script is executable
+  chmod +x /path/to/the/script
+  to execute the script run "./path/to/the/script"
