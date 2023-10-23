@@ -17,7 +17,7 @@ curl -X POST -H "Content-Type: application/json" -d '{"title": "my_title"}' http
 curl -X GET http://localhost:8080/items/<item_id>
 
 ## to change an item run
-curl -X PUT -H "Content-Type: application/json" -d '{"title": "FUCK"}' http://localhost:8080/items/<item_id>
+curl -X PUT -H "Content-Type: application/json" -d '{"title": "my_title"}' http://localhost:8080/items/<item_id>
 
 
 # cpu and memory usage
